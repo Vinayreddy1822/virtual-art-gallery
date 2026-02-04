@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Art Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lucide Icons for shared UI elements -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="navbar container">
+        <div class="nav-brand">Art GALLERY</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link active">Home</a>
+            <a href="collections.html" class="nav-link">Collections</a>
+            <a href="galleries.html" class="nav-link">Galleries</a>
+        </nav>
+        <div class="nav-extras">
+            <a href="galleries/bookmark.html" class="nav-link"><i data-lucide="bookmark"></i></a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Immersive Hero -->
+        <section class="hero-premium">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <h1 class="hero-title">Explore a world of <br><span class="accent-text">Timeless Art</span></h1>
+                <p class="hero-description">Discover curated collections of Nature, Photography, Classical Art, and Digital Masterpieces — all in one immersive gallery.</p>
+
+                <div class="search-wrapper-home">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <input type="text" class="search-input" id="gallerySearch" placeholder="Explore the collection...">
+                    <div id="searchResults" class="search-dropdown" style="display: none;"></div>
+                </div>
+
+                <div class="hero-actions">
+                    <a href="collections.html" class="btn btn-primary">Open Archive</a>
+                    <a href="galleries.html" class="btn btn-outline">Visit Exhibitions</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Exhibition Portals -->
+        <section class="container" style="padding: 8rem 0;">
+            <div class="section-heading-wrapper">
+                <h2 class="section-heading">Featured Art Exhibitions</h2>
+                <p class="section-sub">Explore our themed journeys.</p>
+            </div>
+
+            <div class="exhibition-grid">
+                <a href="./galleries/gallery4.html" class="exhibit-portal">
+                    <div class="portal-img">
+                        <img src="assets/images/nature/1.avif" alt="Nature">
+                    </div>
+                    <div class="portal-info">
+                        <h3>Nature</h3>
+                        <span>11 Pieces</span>
+                    </div>
+                </a>
+                <a href="./galleries/gallery2.html" class="exhibit-portal">
+                    <div class="portal-img">
+                        <img src="assets/images/photography/dollar-gill-yqNRxWNrC04-unsplash.jpg" alt="Photography">
+                    </div>
+                    <div class="portal-info">
+                        <h3>Photography</h3>
+                        <span>10 Pieces</span>
+                    </div>
+                </a>
+                <a href="./galleries/gallery1.html" class="exhibit-portal">
+                    <div class="portal-img">
+                        <img src="assets/images/artwork/birmingham-museums-trust-BPWZ01FtySg-unsplash.jpg"
+                            alt="Art Work">
+                    </div>
+                    <div class="portal-info">
+                        <h3>Art Work</h3>
+                        <span>14 Pieces</span>
+                    </div>
+                </a>
+                <a href="./galleries/gallery3.html" class="exhibit-portal">
+                    <div class="portal-img">
+                        <img src="assets/images/digital/alex-shuper-OycvR_0rW8E-unsplash.jpg" alt="Digital Art">
+                    </div>
+                    <div class="portal-info">
+                        <h3>Digital</h3>
+                        <span>14 Pieces</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- Dynamic Featured Section -->
+        <section class="featured-dynamic">
+            <div class="container">
+                <div class="featured-header">
+                    <h2 class="section-heading">Gallery Highlights</h2>
+                    <a href="collections.html" class="text-link">View Full Archive <i data-lucide="arrow-right"></i></a>
+                </div>
+                <div id="featuredHomeGrid" class="art-grid">
+                    <!-- Injected by script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Museum Manifesto -->
+        <section class="manifesto container">
+            <div class="manifesto-grid">
+                <div class="manifesto-text">
+                    <span class="manifesto-tag">Our Vision</span>
+                    <h2>Bringing Art to <br>Closer to Everyone</h2>
+                    <p>The Grand Gallery is more than a digital space; it is a meticulously curated sanctuary where
+                        every pixel tells a story. We believe that art is a bridge between the tangible and the
+                        infinite, and our mission is to make that bridge accessible to all.</p>
+                    <div class="stats-grid">
+                        <div class="stat-item">
+                            <span class="stat-num">49</span>
+                            <span class="stat-lab">Masterpieces</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-num">04</span>
+                            <span class="stat-lab">Themes</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="manifesto-visual">
+                    <img src="https://images.unsplash.com/photo-1494438639946-1ebd1d20bf85?auto=format&fit=crop&w=1200&q=80"
+                        alt="Gallery Interior">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="container">
+        <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+        <p style="font-size: 0.75rem; color: var(--clr-text-light);">&copy; 2025 Virtual Art Gallery by <a href="https://github.com/vinayreddy1822"> Vinay reddy</a>. All
+            Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

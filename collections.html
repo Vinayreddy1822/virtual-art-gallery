@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collections | The Grand Louvre</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="navbar container">
+        <div class="nav-brand">GRAND GALLERY</div>
+        <nav class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="collections.html" class="nav-link active">Collections</a>
+            <a href="galleries.html" class="nav-link">Galleries</a>
+        </nav>
+        <div class="nav-extras">
+            <a href="galleries/bookmark.html" class="nav-link"><i data-lucide="bookmark"></i></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <header style="padding: 5rem 0; text-align: center;">
+            <h1 style="font-family: var(--ff-display); font-size: 3.5rem;">Permanent Collections</h1>
+            <p style="color: var(--clr-text-light); max-width: 700px; margin: 0 auto;">Browse through our extensive
+                archives categorized by period, style, and medium.</p>
+        </header>
+
+        <!-- Image Detail Modal -->
+        <div id="artModal" class="modal-overlay">
+            <div class="modal-container">
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+                <div class="modal-header">
+                    <h2 id="modalTitle" class="modal-title"></h2>
+                    <p id="modalCategory" class="modal-category"></p>
+                </div>
+                <div class="modal-image-wrapper">
+                    <img id="modalImage" src="" alt="">
+                </div>
+            </div>
+        </div>
+
+        <nav class="filter-nav">
+            <button class="filter-btn active" onclick="setFilter('All')">All Works</button>
+            <button class="filter-btn" onclick="setFilter('Nature')">Nature</button>
+            <button class="filter-btn" onclick="setFilter('Photography')">Photography</button>
+            <button class="filter-btn" onclick="setFilter('Art Work')">Art Work</button>
+            <button class="filter-btn" onclick="setFilter('Digital Art')">Digital Art</button>
+        </nav>
+
+        <div class="art-grid" id="collectionsGrid">
+            <!-- Items injected by script.js -->
+        </div>
+    </main>
+
+    <footer class="container">
+        <div class="footer-links">
+            <a href="#" class="footer-link">Privacy Policy</a>
+            <a href="#" class="footer-link">Terms of Service</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+        <p style="font-size: 0.75rem; color: var(--clr-text-light);">&copy; 2025 Virtual Art Gallery by <a href="https://github.com/vinayreddy1822"> Vinay reddy</a>. All
+            Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>

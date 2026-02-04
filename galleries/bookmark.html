@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saved Masterpieces | The Grand Louvre</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <header class="navbar container">
+        <div class="nav-brand">GRAND GALLERY</div>
+        <nav class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../collections.html" class="nav-link">Collections</a>
+            <a href="../galleries.html" class="nav-link">Galleries</a>
+        </nav>
+        <div class="nav-extras">
+            <a href="bookmark.html" class="nav-link active"><i data-lucide="bookmark"></i></a>
+        </div>
+    </header>
+
+    <main class="container">
+        <header style="padding: 5rem 0; text-align: center;">
+            <h1 style="font-family: var(--ff-display); font-size: 3.5rem;">Your Private Collection</h1>
+            <p style="color: var(--clr-text-light);">A curated selection of the masterpieces that spoke to you.</p>
+        </header>
+
+        <div class="art-grid" id="bookmarkGrid">
+            <!-- Items injected by script.js -->
+            <div style="grid-column: 1 / -1; text-align: center; padding: 4rem 0; color: var(--clr-text-light);"
+                id="noBookmarks">
+                <i data-lucide="info" style="margin-bottom: 1rem; width: 48px; height: 48px;"></i>
+                <p>Your collection is currently empty. Explore our galleries to find pieces that inspire you.</p>
+                <a href="../collections.html" class="btn">Explore Collections</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <p style="font-size: 0.75rem; color: var(--clr-text-light); text-align: center;">&copy; 2025 Virtual Art Gallery
+            by <a href="https://github.com/vinayreddy1822"> Vinay reddy</a>. All
+            Rights Reserved.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
